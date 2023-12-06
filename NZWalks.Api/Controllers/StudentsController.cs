@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NZWalks.Api.Controllers
 {
+    //https:localhost:portnumber/api/student
     [Route("api/[controller]")]
     [ApiController]
     public class StudentsController : ControllerBase
     {
+        //Get:https:localhost:portnumber/api/student
         [HttpGet]
         public IActionResult GetAllStudents()
         {
